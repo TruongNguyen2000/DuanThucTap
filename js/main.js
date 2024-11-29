@@ -76,7 +76,7 @@ function gameLoop(currentTime) {
         endGame(); // Gọi hàm kết thúc game khi rắn va chạm
     }
 
-    document.querySelector('h1').innerText = `Snake Game - Score: ${snake.total}`;
+    document.querySelector('h1').innerHTML = `<span class="score">Score: ${snake.total}</span>`;
 }
 
 function endGame() {
